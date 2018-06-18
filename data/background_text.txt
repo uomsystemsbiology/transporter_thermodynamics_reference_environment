@@ -1,0 +1,11 @@
+The default user is 'sbl' password 'sbl'
+
+This environment contains the MATLAB Compiler Runtime
+for execution of compiled MATLAB code
+
+Double-click the icon 'run_experiments.sh' and select 
+'Execute in Terminal' to reproduce the results of the paper.
+
+Results will be in /home/sbl/transporter_thermodynamics/output
+
+The project page is at: https://github.com/uomsystemsbiology/transporter_thermodynamics
