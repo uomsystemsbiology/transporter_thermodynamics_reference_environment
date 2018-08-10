@@ -14,6 +14,10 @@ echo Completed package installation | tee -a $log
 echo Getting MATLAB Runtime install files | tee -a $log
 wget -q -O MCR_R2017b_glnxa64_installer.zip "http://ssd.mathworks.com/supportfiles/downloads/R2017b/deployment_files/R2017b/installers/glnxa64/MCR_R2017b_glnxa64_installer.zip"
 
+echo Installing LaTeX | tee -a $log
+sudo apt-get -y install --no-install-recommends texlive-latex-recommended
+sudo apt-get -y install --no-install-recommends texlive-font-utils
+
 echo Writing build info into build_info.txt | tee -a $log
 printf 'MCR R2017b' >> /vagrant/temp/build_info.txt
 printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
