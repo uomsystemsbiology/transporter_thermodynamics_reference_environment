@@ -18,6 +18,10 @@ cd /home/sbl/transporter_thermodynamics/code
 
 echo "using a syntax like: ./RUN.sh /usr/local/MATLAB/MATLAB_Runtime/v85" | tee -a $log
 sudo ./run_transporter_thermodynamics.sh /usr/local/MATLAB/MATLAB_Runtime/v93
+cd ../output
+pdflatex transporter_figures.tex
+xdg-open ./
+xdg-open transporter_figures.pdf
 
 echo "Note that the execution directory often has to be the code directory" | tee -a $log
 echo "so you will need to CD into it before execution" | tee -a $log
