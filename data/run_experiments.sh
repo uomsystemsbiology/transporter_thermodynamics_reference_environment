@@ -18,7 +18,7 @@ cd /home/sbl/transporter_thermodynamics/code
 
 echo "using a syntax like: ./RUN.sh /usr/local/MATLAB/MATLAB_Runtime/v85" | tee -a $log
 sudo ./run_transporter_thermodynamics.sh /usr/local/MATLAB/MATLAB_Runtime/v93
-sudo chmod a+rw output
+sudo chmod a+rw ../output
 cd ../output
 pdflatex transporter_figures.tex
 xdg-open ./
